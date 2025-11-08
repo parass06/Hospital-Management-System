@@ -1,100 +1,88 @@
-🏥 Hospital Management System
+<h1 align="center">🏥 Hospital Management System</h1>
 
-📘 Overview
+<p align="center">
+  <b>A Web Application using Java Servlets & JSP for Efficient Hospital Administration</b><br>
+</p>
 
-The Hospital Management System is a web-based application built using Java Servlets and JSP to simplify and automate hospital operations such as patient management, doctor scheduling, appointments, billing, and medical records.
-It provides separate modules for administrators, doctors, and patients to enhance efficiency and streamline hospital workflows.
+---
 
-🚀 Features
+## 📘 Overview
+The **Hospital Management System** is a full-stack Java web application designed to simplify hospital operations such as managing patients, doctors, appointments, billing, and medical records.  
+It provides secure role-based access for **Admins**, **Doctors**, and **Patients**, ensuring an organized and efficient healthcare workflow.
 
-👨‍⚕️ Admin Panel
+---
 
-Manage doctors, patients, appointments, and medical records
+## 🚀 Features
+✅ **Admin Panel**
+- Manage doctors, patients, appointments, and records  
+- Add or delete users and view system data  
 
-View and delete records
+✅ **Doctor Dashboard**
+- View scheduled appointments  
+- Update patient treatment details and statuses  
 
-🧑‍⚕️ Doctor Dashboard
+✅ **Patient Portal**
+- Register, book, or cancel appointments  
+- View bills, prescriptions, and medical records  
 
-View patient appointments and update treatment status
+✅ **Medical & Billing Management**
+- Store and retrieve patient medical history  
+- Auto-generate bills for treatments and consultations  
 
-🏥 Patient Portal
+✅ **Secure Login System**
+- Separate login modules for Admin, Doctor, and Patient  
 
-Register, book or cancel appointments, and view billing details
+---
 
-💊 Medical Record Management
+## 🧩 Tech Stack
 
-Add and view patient medical history
+| Category | Technologies |
+|-----------|--------------|
+| **Frontend** | JSP, HTML, CSS |
+| **Backend** | Java Servlets |
+| **Database** | XML (extendable to MySQL) |
+| **Server** | Apache Tomcat |
+| **Build Tool** | Maven |
+| **IDE** | IntelliJ IDEA / VS Code / Eclipse |
 
-💰 Billing System
+---
 
-Automatic bill generation for treatments and appointments
+## 🧠 How It Works
+1. **Patients register** and log in to manage appointments.  
+2. **Admins add doctors**, manage data, and oversee activities.  
+3. **Doctors update patient details** and medical records.  
+4. **System auto-generates bills** and stores treatment data securely.
 
-🔐 Authentication System
+---
 
-Secure login for admin, doctor, and patient roles
+## 🛠️ Setup & Installation
 
-🧩 Technologies Used
-Category	Tools/Technologies
-Frontend	JSP, HTML, CSS
-Backend	Java Servlets
-Database	XML (or MySQL if extended)
-Server	Apache Tomcat
-Build Tool	Maven
-IDE	IntelliJ IDEA / VS Code / Eclipse
-⚙️ Project Structure
-Hospital-Management-System/
-├── src/
-│   ├── main/
-│   │   ├── java/com/hospital/
-│   │   │   ├── dao/        # Data Access Layer
-│   │   │   ├── model/      # POJO Classes
-│   │   │   └── servlets/   # Controllers
-│   │   └── webapp/         # JSP Pages, CSS
-│   └── test/               # (Optional: Unit Tests)
-├── data/                   # XML files for data storage
-├── pom.xml                 # Maven configuration
-└── README.md
+### Prerequisites
+- Java JDK (8 or higher)  
+- Apache Tomcat  
+- Maven  
 
-🧠 How It Works
-
-Patient registers and logs in via JSP form.
-
-Admin adds doctors and manages patient details.
-
-Patients book appointments with available doctors.
-
-Doctors update treatment records, which are stored in the system.
-
-Bills are generated automatically for each completed appointment.
-
-🛠️ Setup & Installation
-
-Clone the repository:
-
+### Steps
+```bash
+# Clone this repository
 git clone https://github.com/parass06/Hospital-Management-System.git
 
+# Navigate into the project
+cd Hospital-Management-System
 
-Open the project in your IDE (VS Code / IntelliJ / Eclipse).
-
-Make sure you have Apache Tomcat installed and configured.
-
-Build the project using Maven:
-
+# Build the project
 mvn clean install
+```
 
+Then, deploy on Tomcat or run directly via your IDE.
+Finally, open your browser at: http://localhost:8080/Hospital-Management-System/
 
-Deploy the .war file or run directly on Tomcat.
+Future Enhancements
 
-Open your browser and go to:
+✅ Switch from XML to MySQL database
 
-http://localhost:8080/Hospital-Management-System/
+📊 Add dashboard analytics for admin
 
-🧾 Future Enhancements
+📩 Email/SMS appointment notifications
 
-Database migration from XML → MySQL
-
-Role-based dashboards with analytics
-
-Integration with email/SMS notifications
-
-RESTful APIs for mobile app integration
+📱 REST API for mobile integration
