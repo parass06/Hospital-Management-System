@@ -7,7 +7,7 @@
 ---
 
 ## 📘 Overview
-The **Hospital Management System** is a full-stack Java web application designed to simplify hospital operations such as managing patients, doctors, appointments, billing, and medical records.  
+The **Hospital Management System** is a full-stack Java web application designed to simplify hospital operations such as managing patients, doctors, appointments, billing, and medical records. 
 It provides secure role-based access for **Admins**, **Doctors**, and **Patients**, ensuring an organized and efficient healthcare workflow.
 
 ---
